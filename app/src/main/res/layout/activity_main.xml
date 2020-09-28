@@ -14,31 +14,33 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/texView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@={activityViewModel.diceNumberMLD}"
-            android:textColor="#000000"
-            android:textSize="25sp"
+        <ImageView
+            android:id="@+id/diceIV"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/six"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.331" />
+            app:layout_constraintVertical_bias="0.337" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
             android:onClick="@{() -> activityViewModel.setCurrentClickTime()}"
+            android:text="Roll"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.582" />
+            app:layout_constraintVertical_bias="0.625" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
